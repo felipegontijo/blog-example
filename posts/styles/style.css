@@ -9,6 +9,6 @@ body {
 }
 
 .header {
-    display: flex;
+    display: inline-flex;
 
 }
