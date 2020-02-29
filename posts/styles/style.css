@@ -4,8 +4,9 @@ body {
 }
 
 .wrapper {
-    max-width: 864px;
     width: 100%;
+    max-width: 864px;
+
 }
 
 .header {
