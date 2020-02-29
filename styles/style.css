@@ -1,6 +1,8 @@
 body {
     font-size: 10px;
-    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Nunito, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #d4d4d4;
+    color: black;
 }
 
 .wrapper {
@@ -15,10 +17,33 @@ body {
 }
 
 .header {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
+    height: 6em;
+}
 
+.header__title {
+    font-size: 2em;
+}
+
+.header__filler {
+    flex: 1 1 auto;
 }
 
 .header__list {
     display: inline-flex;
+    font-size: 1.6em;
+}
+
+.header__item {
+    padding-left: 1em;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
