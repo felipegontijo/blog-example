@@ -16,6 +16,8 @@ body {
     align-items: center;
 }
 
+/* HEADER */
+
 .header {
     display: flex;
     align-items: center;
@@ -46,4 +48,24 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+/* MAIN */
+
+main .wrapper {
+    display: grid;
+}
+
+.hero {
+    padding-left: 1.5em;
+}
+
+.hero__title {
+    font-size: 5.7em;
+    margin-block-end: 0.5em;
+}
+
+.hero__description {
+    font-size: 2.2em;
+    margin-block-start: 0;
 }
