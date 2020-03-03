@@ -1,4 +1,6 @@
 @import 'header.css';
+@import 'hero.css';
+@import 'teaser.css';
 
 html {
     box-sizing: border-box;
@@ -38,50 +40,6 @@ main .wrapper {
     display: grid;
 }
 
-/* teaser */
-
-.blog-teaser__headline {
-    font-size: 2.2em;
-}
-
-.blog-teaser__card {
-    background-color: #f4f4f4;
-    border-radius: 1em;
-    margin-block-end: 2em;
-    padding: 1em 1em;
-    display: grid;
-    grid-template-areas:
-        "img title title"
-        "img text text"
-    ;
-    grid-template-rows: 40px 95px;
-    box-shadow: 3px 3px 3px grey;
-}
-
-.blog-teaser__card:hover {
-    transform: translate(0, -5px);
-    box-shadow: 3px 5px 5px grey;
-}
-
-.blog-teaser__card img {
-    grid-area: img;
-    margin-right: 1em;
-    border-radius: 1em;
-}
-
-.blog-teaser__title {
-    grid-area: title;
-    font-size: 1.8em;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-}
-
-.blog-teaser__text {
-    grid-area: text;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    font-size: 1.2em;
-}
 
 /* POST PAGE */
 
