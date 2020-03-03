@@ -1,7 +1,7 @@
-@import 'header.css';
-@import 'hero.css';
-@import 'teaser.css';
-@import 'post-page.css';
+@import './index/header.css';
+@import './index/hero.css';
+@import './index/teaser.css';
+@import './posts/post-page.css';
 
 html {
     box-sizing: border-box;
