@@ -147,9 +147,10 @@ main .wrapper {
 
 .blog-post__author {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-        "a a b b b b"
-        "a a c c c c";
+        "a b b"
+        "a c c";
     grid-column-gap: 12px;
     grid-row-gap: 12px;
     align-content: center;
