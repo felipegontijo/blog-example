@@ -1,0 +1,15 @@
+.hero {
+    padding-inline-start: 1.5em;
+    padding-inline-end: 1.5em;
+}
+
+.hero__title {
+    font-size: 5em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.hero__description {
+    font-size: 2.2em;
+    margin-block-start: 0;
+}
