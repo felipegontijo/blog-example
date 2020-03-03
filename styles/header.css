@@ -1,0 +1,36 @@
+.header {
+    height: 6em;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.header .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header__title {
+    font-size: 2em;
+}
+
+.header__filler {
+    flex: 1 1 auto;
+}
+
+.header__list {
+    display: inline-flex;
+    font-size: 1.8em;
+}
+
+.header__item {
+    padding-left: 1em;
+}
+
+header li,
+.share li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
