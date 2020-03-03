@@ -85,7 +85,7 @@ main .wrapper {
 }
 
 .hero__title {
-    font-size: 5.7em;
+    font-size: 5em;
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
 }
@@ -106,9 +106,12 @@ main .wrapper {
     border-radius: 1em;
     margin-block-end: 2em;
     padding: 1em 1em;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-shrink: none;
+    display: grid;
+    grid-template-areas:
+        "img title title"
+        "img text text"
+    ;
+    grid-template-rows: 40px 95px;
     box-shadow: 3px 3px 3px grey;
 }
 
@@ -118,24 +121,23 @@ main .wrapper {
 }
 
 .blog-teaser__card img {
+    grid-area: img;
     margin-right: 1em;
     border-radius: 1em;
-    flex: 1;
-}
-
-.blog-teaser__content {
-    flex: 2;
 }
 
 .blog-teaser__title {
-    font-size: 1.5em;
+    grid-area: title;
+    font-size: 1.8em;
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
 }
 
 .blog-teaser__text {
+    grid-area: text;
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
+    font-size: 1.2em;
 }
 
 /* POST PAGE */
@@ -149,8 +151,8 @@ main .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-        "a b b"
-        "a c c";
+        "icon name name"
+        "icon bio bio";
     grid-column-gap: 12px;
     grid-row-gap: 12px;
     align-content: center;
@@ -158,19 +160,19 @@ main .wrapper {
 }
 
 .blog-post__author i {
-    grid-area: a;
+    grid-area: icon;
     align-self: center;
     justify-self: end;
 }
 
 .author-name {
-    grid-area: b;
+    grid-area: name;
     align-self: end;
     margin-bottom: 0;
 }
 
 .author-bio {
-    grid-area: c;
+    grid-area: bio;
     align-self: start;
     margin-top: 0;
 }

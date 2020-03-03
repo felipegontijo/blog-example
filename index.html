@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
     <title>My Blog Homepage</title>
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
-            <span class="header__title">Felipe</span>
+            <span class="header__title">QR</span>
             <span class="header__filler"></span>
             <span class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="" class="header__link">Posts</a>
+                        <a href="#posts" class="header__link">Posts</a>
                     </li>
                     <li class="header__item">
                         <a href="#about" class="header__link">About</a>
@@ -33,24 +34,32 @@
         <section class="blog-teaser">
             <div class="wrapper">
                 <h2 class="blog-teaser__headline">Recent posts</h2>
-                <a href="./posts/post.html">
-                    <div class="blog-teaser__card">
-                            <img src="./img/man-in-galaxy.png" alt="blog-teaser image">
-                            <div class="blog-teaser__content">
-                                <h3 class="blog-teaser__title">This is one post</h3>
-                                <p class="blog-teaser__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint cupiditate aliquam quae possimus eligendi qui magnam ab quas ratione aperiam accusantium numquam excepturi, exercitationem provident veritatis facere blanditiis sunt!</p>
-                            </div>
-                    </div>
-                </a>
-                <a href="./posts/post2.html">
-                    <div class="blog-teaser__card">
-                            <img src="./img/hand-on-water.png" alt="blog-teaser image">
-                            <div class="blog-teaser__content">
-                                <h3 class="blog-teaser__title">This is another post</h3>
-                                <p class="blog-teaser__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint cupiditate aliquam quae possimus eligendi qui magnam ab quas ratione aperiam accusantium numquam excepturi, exercitationem provident veritatis facere blanditiis sunt!</p>
-                            </div>
-                    </div>
-                </a>
+                <div class="posts-container">
+                    <a href="./posts/post.html">
+                        <div class="blog-teaser__card">
+                                <picture>
+                                    <source media="(min-width: 505px)" srcset="./img/man-in-galaxy@1.25x.png">
+                                    <img src="./img/man-in-galaxy.png" alt="blog-teaser image">
+                                </picture>
+                                <!-- <div class="blog-teaser__content"> -->
+                                    <h3 class="blog-teaser__title">This is one post</h3>
+                                    <p class="blog-teaser__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint cupiditate aliquam quae possimus eligendi qui magnam ab quas ratione aperiam accusantium...</p>
+                                <!-- </div> -->
+                        </div>
+                    </a>
+                    <a href="./posts/post2.html">
+                        <div class="blog-teaser__card">
+                                <picture>
+                                    <source media="(min-width: 505px)" srcset="./img/hand-on-water@1.25x.png">
+                                    <img src="./img/hand-on-water.png" alt="blog-teaser image">
+                                </picture>
+                                <!-- <div class="blog-teaser__content"> -->
+                                    <h3 class="blog-teaser__title">This is another post</h3>
+                                    <p class="blog-teaser__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint cupiditate aliquam quae possimus eligendi qui magnam ab quas ratione aperiam accusantium...</p>
+                                <!-- </div> -->
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
