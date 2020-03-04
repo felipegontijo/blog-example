@@ -25,8 +25,7 @@
     padding-left: 1em;
 }
 
-header li,
-.share li {
+ul li {
     list-style: none;
 }
 

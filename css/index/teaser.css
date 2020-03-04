@@ -21,7 +21,7 @@
     box-shadow: 3px 5px 5px grey;
 }
 
-.blog-teaser__card img {
+.blog-teaser__image {
     grid-area: img;
     margin-right: 1em;
     border-radius: 1em;
