@@ -1,11 +1,11 @@
 .header {
     height: 6em;
-    box-shadow: 2px 2px 2px grey;
+    box-shadow: 2px 2px 10px grey;
 }
 
 .header .wrapper {
     display: flex;
-    align-items: center;
+    place-items: center;
 }
 
 .header__title {
