@@ -2,7 +2,8 @@
 @import './index/hero.css';
 @import './index/teaser.css';
 @import './posts/post-page.css';
-@import './css/index/form.css';
+@import './index/form.css';
+@import './index/footer.css';
 
 html {
     box-sizing: border-box;

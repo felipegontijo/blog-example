@@ -45,10 +45,6 @@ article .wrapper {
     word-wrap: break-word;
 }
 
-.share__list {
-    display: flex;
-    justify-content: space-evenly;
-    padding-inline-start: 0;
-    padding-block-start: 1em;
-    padding-block-end: 1em;
+hr {
+    width: inherit;
 }
