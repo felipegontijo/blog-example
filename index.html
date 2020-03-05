@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/index/form.css">
     <title>My Blog Homepage</title>
 </head>
 <body>
@@ -35,7 +36,7 @@
             <div class="wrapper">
                 <h2 class="blog-teaser__headline">Recent posts</h2>
                 <div class="posts-container">
-                    <a href="./posts/post.html">
+                    <a href="./post-page/post.html">
                         <div class="blog-teaser__card">
                             <picture class="blog-teaser__image">
                                 <source media="(min-width: 505px)" srcset="../img/man-in-galaxy@1.25x.png">
@@ -46,7 +47,7 @@
                             <p class="blog-teaser__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint cupiditate aliquam quae possimus eligendi qui magnam ab quas ratione aperiam accusantium...</p>
                         </div>
                     </a>
-                    <a href="./posts/post2.html">
+                    <a href="./post-page/post2.html">
                         <div class="blog-teaser__card">
                             <picture class="blog-teaser__image">
                                 <source media="(min-width: 505px)" srcset="../img/hand-on-water@1.25x.png">
@@ -58,6 +59,18 @@
                         </div>
                     </a>
                 </div>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="wrapper">
+                <div class="subscribe-form">
+                    <h2 class="subscribe-form__title">Subscribe for updates!</h2>
+                    <form>
+                      <input type="text" name="field1" placeholder="Full Name" class="subscribe-form__field">
+                      <input type="email" name="field2" placeholder="Email" class="subscribe-form__field">
+                      <button class="subscribe-form__button">SUBSCRIBE</button>
+                    </form>
+                  </div>
             </div>
         </section>
     </main>

@@ -13,6 +13,10 @@ screen and (max-width: 370px) {
     .blog-teaser__text {
         grid-column: span 2;
     }
+
+    .subscribe-form__title {
+        font-size: 18px;
+    }
 }
 
 @media
